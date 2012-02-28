@@ -6,7 +6,7 @@
  * This class also handles changing a user's password.
  */
 
-class register extends roboSISAPI
+class register extends generalController
 {
 	// constants
 	const DEFAULT_PASS = "qwerty";
