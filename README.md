@@ -1,0 +1,2 @@
+### Harker Robotics 1072 Scouting App
+The Scouting App allows team members to quickly add information about the various teams at competition from a web app via their mobile devices or computers. This repository houses both the server code and front-end code for the app.
