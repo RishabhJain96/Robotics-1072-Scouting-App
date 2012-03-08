@@ -119,7 +119,7 @@ class generalController
 	 */
 	public function inputNewTeam($teamName, $teamNumber, $username)
 	{
-		// logs the date and time that the user submitted the info
+		// logs the date and time that the user submitted the info in both a human-readable and easy-to-manipulate format
 		$englishTimestamp = date("l, F j \a\\t g:i a"); // Friday, September 23 at 11:05 pm;
 		$numericTimestamp = date("YmdHi"); // 201109232355;
 		// implementation here
