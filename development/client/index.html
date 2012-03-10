@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>Harker Robotics 1072 Scouting App - Home</title> 
+	
+	<!-- jQuery Mobile -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	
+	<!-- custom scripts -->
+	<script type="text/javascript" src="functions.js"></script>
+	
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width">
+
+	<!-- iOS stuff -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+
+	<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- For mobile browsers that do not recognize the viewport tag -->
+	<meta name="MobileOptimized" content="320" />
+</head>
+
+<body>
+	
+	<div data-role="page" id="home">
+		
+		<header data-role="header" data-theme="a" data-position="inline">
+			<h1>Teams</h1>
+			<a href="index.html" data-icon="gear" class="ui-btn-right">Edit</a>
+		</header>
+		
+		<div data-role="content">
+			<!-- jQuery post api for server data (get list of team names) -->
+			<!-- test data -->
+			<ul data-role="listview" data-inset="false">
+				<li><a href="editteam.html?id=1">Harker Robotics</a></li>
+				<li><a href="editteam.html?id=2">Team Delphi</a></li>
+				<li><a href="editteam.html?id=3">Bell Boys</a></li>
+			</ul>
+		</div><!-- end content div -->
+		
+		<footer data-role="footer" data-theme="a">
+			<div class="footer-nav" data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="index.html" id="home-button" data-icon="home" data-transition="slide" data-direction="reverse">Home</a></li>
+					<li><a href="addnewteam.html" id="addnewteam-button" data-icon="plus" data-transition="slide">Add</a></li>
+				</ul>
+			</div><!-- end navbar -->
+		</footer>
+		
+	</div><!-- end page div -->
+	
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>Harker Robotics 1072 Scouting App - Add Team</title> 
+	
+	<!-- jQuery Mobile -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width">
+
+	<!-- iOS stuff -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+
+	<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- For mobile browsers that do not recognize the viewport tag -->
+	<meta name="MobileOptimized" content="320" />
+</head>
+
+<body>
+	<div date-role="page" id="addnewteam">
+		
+		<header data-role="header" data-theme="a">
+			<h1>Add New Team</h1>
+		</header>
+		
+		<div data-role="content">
+			<form action="" method="post">
+				<div class="ui-hide-label">
+					<fieldset class="ui-grid-a">
+						<label for="teamname">Team Name:</label>
+						<input type="text" name="teamname" id="teamname" value="" placeholder="Team Name"/>
+						<label for="teamnumber">Team Number:</label>
+						<input type="text" name="teamnumber" id="teamnumber" value="" placeholder="Team Number"/>
+						<label for="categoryname">Category Name:</label>
+						<input type="text" name="categoryname" id="categoryname" value="" placeholder="Category Name"/>
+						<label for="categorycontent">Notes:</label>
+						<textarea name="categorycontent" id="categorycontent" value="" placeholder="Notes"></textarea>
+					</fieldset>
+				</div><!-- end fieldcontain div -->
+				<div class="ui-body ui-body-b">
+					<fieldset id="submitaddnewteam" class="ui-grid-a">
+						<div class="ui-block-a"><button type="submit" data-theme="c">Cancel</button></div>
+						<div class="ui-block-b"><button type="submit" data-theme="b">Submit</button></div>
+					</fieldset>
+				</div><!-- end submission div -->
+			</form>
+		</div><!-- end content div -->
+		
+		<footer data-role="footer" data-theme="a">
+			<div class="footer-nav" data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="index.html" id="home-button" data-icon="home" data-transition="slide" data-direction="reverse">Home</a></li>
+					<li><a href="addnewteam.html" id="addnewteam-button" data-icon="plus" data-transition="slide">Add</a></li>
+				</ul>
+			</div><!-- end navbar -->
+		</footer>
+		
+	</div><!-- end page div -->
+	
+</body>
+</html>
