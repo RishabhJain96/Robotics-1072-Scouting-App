@@ -85,7 +85,9 @@ class generalController
 	 */
 	public function getAllTeamNames()
 	{
-		// implementation here
+		$resourceid = $this->_dbConnection->selectFromTable("Teams");
+		$array = $this->_dbConnection->formatQueryResults($resourceid, "TeamName");
+		return $array;
 	}
 	
 	/**
@@ -94,7 +96,7 @@ class generalController
 	 * @param teamID: The team to get the information of.
 	 * @return array: A one-dimensional array of the info for the given team in the format array("CategoryName" => "CategoryContent"), with CategoryName for each category being the keys and CategoryContent being the values.
 	 */
-	public function getTeamInfo($teamID)
+	public function getTeamInfoList($teamID)
 	{
 		// implementation here
 	}
@@ -106,7 +108,9 @@ class generalController
 	 */
 	public function getAllTeamNumbers()
 	{
-		// implementation here
+		$resourceid = $this->_dbConnection->selectFromTable("Teams");
+		$array = $this->_dbConnection->formatQueryResults($resourceid, "TeamNumber");
+		return $array;
 	}
 	
 	/**

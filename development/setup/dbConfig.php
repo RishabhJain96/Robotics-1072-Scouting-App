@@ -44,8 +44,8 @@ $teams[] = array("EnglishDateUpdated", "TINYTEXT"); // fromat 'September 9, 2011
 	
 if($dbConfig->createINNODBTable("Teams", $teams))
 	echo "Success! Your Teams Table is now set up! <br />";
-if($dbConfig->setRelation("Teams", "Users", "UserID"))
-	echo "Success! Your Teams and Users Table are now linked via UserID! <br />";
+//if($dbConfig->setRelation("Teams", "Users", "UserID"))
+//	echo "Success! Your Teams and Users Table are now linked via UserID! <br />";
 
 /**
  * CategoryList Table

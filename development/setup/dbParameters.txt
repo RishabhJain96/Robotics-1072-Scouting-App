@@ -1,0 +1,4 @@
+RoboticsScouting
+localhost
+root
+hrt1072
