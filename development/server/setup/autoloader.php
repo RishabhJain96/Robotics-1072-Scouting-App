@@ -6,7 +6,7 @@ spl_autoload_register(function ($className) {
     $possibilities = array( 
         '../controllers'.DIRECTORY_SEPARATOR.$className.'.php', 
         '../back_end'.DIRECTORY_SEPARATOR.$className.'.php', 
-        '../views'.DIRECTORY_SEPARATOR.$className.'.php', 
+        '../apis'.DIRECTORY_SEPARATOR.$className.'.php', 
         $className.'.php' 
     ); 
     foreach ($possibilities as $file) { 
