@@ -51,7 +51,7 @@ class register extends generalController
  	public function inputNewUser($username, $password, $phonenumber, $code, $type = null)
  	{
  		// checks if username already exists in db
- 		$resourceid = $this->_dbConnection->selectFromTable("RoboUsers", "Username", $username);
+ 		$resourceid = $this->_dbConnection->selectFromTable("Users", "Username", $username);
  		$arr = $this->_dbConnection->formatQueryResults($resourceid, "Username");
  		if (count($arr) > 0)
  		{
@@ -68,7 +68,7 @@ class register extends generalController
 			$type = "Regular"; // user is regular unless changed specifically
 		}
  		$array = array("ActivationCode" => $code, "Username" => $username, "UserPassword" => $password, "UserPhoneNumber" => $phonenumber, "UserType" => $type);
- 		$this->_dbConnection->insertIntoTable("RoboUsers", "RoboUsers", "Username", $username, "UserID", $array);
+ 		$this->_dbConnection->insertIntoTable("Users", "Users", "Username", $username, "UserID", $array);
  		return true;
  	}
 	
@@ -83,7 +83,7 @@ class register extends generalController
 		$array = $array = array("UserEmail" => $email);
 		//print 'updating table in input email';
 		//$this->_nonRelationalDbConnection->updateTable("RoboUsers", $array, "Username = '$username'");
-		$this->_dbConnection->updateTable("RoboUsers", "RoboUsers", "Username", $username, "UserID", $array, "Username = '$username'");
+		$this->_dbConnection->updateTable("Users", "Users", "Username", $username, "UserID", $array, "Username = '$username'");
 	}
 	
 	/**
@@ -96,7 +96,7 @@ class register extends generalController
 		$stuffing = "Activated"; // clears the activation code field of its md5 to prevent accidental re-activation
 		$array = array("Activated" => $bool, "ActivationCode" => $stuffing);
 		//$this->_nonRelationalDbConnection->updateTable("RoboUsers", $array, "ActivationCode = '$code'");
-		$this->_dbConnection->updateTable("RoboUsers", "RoboUsers", "ActivationCode", $code, "UserID", $array, "ActivationCode = '$code'");
+		$this->_dbConnection->updateTable("Users", "Users", "ActivationCode", $code, "UserID", $array, "ActivationCode = '$code'");
 
 		//echo 'Congratulations! Your account has been activated.';
 	}
@@ -138,7 +138,7 @@ class register extends generalController
 		$password = md5($password);
 		$condition = "Username = '$username'";
 		$array = array("UserPassword" => $password);
-		$this->_dbConnection->updateTable("RoboUsers", "RoboUsers", "Username", $username, "UserID", $array, $condition);
+		$this->_dbConnection->updateTable("Users", "Users", "Username", $username, "UserID", $array, $condition);
 	}
 }
 

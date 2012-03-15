@@ -4,7 +4,7 @@
  * @author Rohit Sanbhadti
  */
 
-class login extends roboSISAPI
+class login extends generalController
 {
 	// instance variables
 	protected $_dbConnection;
@@ -18,7 +18,7 @@ class login extends roboSISAPI
 	public function checkLogin($username, $password)
 	{
 		// checks if username exists
-		$resourceid = $this->_dbConnection->selectFromTable("RoboUsers", "Username", $username);
+		$resourceid = $this->_dbConnection->selectFromTable("Users", "Username", $username);
 		$arr = $this->_dbConnection->formatQueryResults($resourceid, "Username");
 		if (empty($arr) || is_null($arr[0]))
 		{
@@ -28,7 +28,7 @@ class login extends roboSISAPI
 		
 		// checks if given username has given password
 		$md5password = md5($password); // required, since passwords in db are md5 hashed
-		$resourceid2 = $this->_dbConnection->selectFromTable("RoboUsers", "Username", $username);
+		$resourceid2 = $this->_dbConnection->selectFromTable("Users", "Username", $username);
 		$arr2 = $this->_dbConnection->formatQueryResults($resourceid2, "UserPassword");
 		if (strcmp($md5password,$arr2[0]) == 0)
 		{

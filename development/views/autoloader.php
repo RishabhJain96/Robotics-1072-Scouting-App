@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 // autoloader code
 // loads classes as needed, eliminates the need for a long list of includes at the top
 spl_autoload_register(function ($className) { 
