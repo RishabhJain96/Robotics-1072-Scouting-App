@@ -123,13 +123,49 @@ if (isset($_POST['cancel']))
 				<div class="ui-hide-label" id="categories">
 					<fieldset class="ui-grid-a">
 						<label for="categoryname">Category Name:</label>
-						<input type="text" name="categoryname[0][name]" id="categoryname" value="" placeholder="Category Name"/>
+						<input type="text" name="categoryname[0][name]" id="categoryname" value="Ability to cross see-saw" placeholder="Category Name"/>
 						<label for="categorycontent">Notes:</label>
 						<textarea name="categorycontent[0][content]" id="categorycontent" value="" placeholder="Notes"></textarea>
+						<label for="categoryname">Category Name:</label>
+						<input type="text" name="categoryname[1][name]" id="categoryname" value="Ability to put down see-saw" placeholder="Category Name"/>
+						<label for="categorycontent">Notes:</label>
+						<textarea name="categorycontent[1][content]" id="categorycontent" value="" placeholder="Notes"></textarea>
+						<label for="categoryname">Category Name:</label>
+						<input type="text" name="categoryname[2][name]" id="categoryname" value="Ability to cross bump" placeholder="Category Name"/>
+						<label for="categorycontent">Notes:</label>
+						<textarea name="categorycontent[2][content]" id="categorycontent" value="" placeholder="Notes"></textarea>
+						<label for="categoryname">Category Name:</label>
+						<input type="text" name="categoryname[3][name]" id="categoryname" value="Balancing capability" placeholder="Category Name"/>
+						<label for="categorycontent">Notes:</label>
+						<textarea name="categorycontent[3][content]" id="categorycontent" value="" placeholder="Notes"></textarea>
+						<label for="categoryname">Category Name:</label>
+						<input type="text" name="categoryname[4][name]" id="categoryname" value="Hoops that robot can score in" placeholder="Category Name"/>
+						<label for="categorycontent">Notes:</label>
+						<textarea name="categorycontent[4][content]" id="categorycontent" value="" placeholder="Notes"></textarea>
+						<label for="categoryname">Category Name:</label>
+						<input type="text" name="categoryname[5][name]" id="categoryname" value="Speed" placeholder="Category Name"/>
+						<label for="categorycontent">Notes:</label>
+						<textarea name="categorycontent[5][content]" id="categorycontent" value="" placeholder="Notes"></textarea>
+						<label for="categoryname">Category Name:</label>
+						<input type="text" name="categoryname[6][name]" id="categoryname" value="Maneuverability" placeholder="Category Name"/>
+						<label for="categorycontent">Notes:</label>
+						<textarea name="categorycontent[6][content]" id="categorycontent" value="" placeholder="Notes"></textarea>
+						<label for="categoryname">Category Name:</label>
+						<input type="text" name="categoryname[7][name]" id="categoryname" value="Drive Train" placeholder="Category Name"/>
+						<label for="categorycontent">Notes:</label>
+						<textarea name="categorycontent[7][content]" id="categorycontent" value="" placeholder="Notes"></textarea>
+						<label for="categoryname">Category Name:</label>
+						<input type="text" name="categoryname[8][name]" id="categoryname" value="Autonomous Capabilities" placeholder="Category Name"/>
+						<label for="categorycontent">Notes:</label>
+						<textarea name="categorycontent[8][content]" id="categorycontent" value="" placeholder="Notes"></textarea>
+						<label for="categoryname">Category Name:</label>
+						<input type="text" name="categoryname[9][name]" id="categoryname" value="Additional Notes" placeholder="Category Name"/>
+						<label for="categorycontent">Notes:</label>
+						<textarea name="categorycontent[9][content]" id="categorycontent" value="" placeholder="Notes"></textarea>
 					</fieldset>
 				</div><!-- end category div -->
 				<!-- <form name="addcategoryform"> -->
-					<input type="button" name="addcategory" value="+" id="button" onClick="add();" />
+					<!-- <input type="button" name="addcategory" value="+" id="button" onClick="add();" /> -->
 				<!-- </form> -->
 				<div class="ui-body ui-body-b">
 					<fieldset class="ui-grid-a">
